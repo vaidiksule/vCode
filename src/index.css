@@ -1,68 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
+  font-style: normal;
 
-  color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #ffffff;
 
-  font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  height: 100vh; /* Full viewport height */
+  background-color: #ffffff; /* Light background color for contrast */
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+header {
+  width: 100%;
+  background-color: #ffffff; /* Light background color for the header */
+  display: flex;
+  align-items: center;
+  
+}
+.logoContaineer{
+  padding: 0;
+  margin: 0;
+  padding-left: 1rem;
+}
+
+.logoContaineer img {
+  max-height: 25vh; /* Adjust the logo size */
+  width: auto;
+  margin-left: 1rem;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.mainContainer div {
+  border: 2px #647906;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem; /* Space between cards */
+  padding-top: 10vh;
+}
+
+.card {
+  background: #ffffff; 
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  width: 200px;
+  height: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card:hover{
+  background: #dfd9d9;
+  transition: 0.3s ease;
+}
+
+
+.card p {
+  font-size: 1.4em;
+  color: #555;
+}
+
+
+.form-container {
+  background: #ffffff; /* White background for the form */
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  margin-left: 4rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+
+input {
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
 button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
+  padding: 10px;
+  background-color: #007bff; /* Blue background for the button */
+  color: white;
+  border: none;
+  border-radius: 4px;
   font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
   cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  transition: background-color 0.3s ease;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.nameContact{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  gap: 0.5rem;
+}
+
+.dateTimeLocation{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  gap: 0.5rem;
 }
